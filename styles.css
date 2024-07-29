@@ -342,7 +342,9 @@ input, textarea {
 }
 
 textarea {
+  font-family: inherit;
   resize: none;
+  font-size: 0.8rem;
 }
 
 .form__label {
