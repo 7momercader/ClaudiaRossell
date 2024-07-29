@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Claudia Rossell</title>
+</head>
+<body>
+  <header class="header">
+    <input id="checkbox" type="checkbox" class="header__checkbox">
+    <label for="checkbox" role="button" class="header__btn">=</label>
+    <div class="header__img-container">
+      <img src="img/logo.png" alt="" class="header__img-logo">
+    </div>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#home" class="header__link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Selected Works</a>
+        </li>
+        <li class="header__item">
+          <a href="#bio" class="header__link">About/CV</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">Events</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">Contact</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">FAQS</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="home">
+    <div class="wrapper">
+      <div class="home__wrapper">
+        <div class="home__cover"></div>
+        <h1 class="home__title">CLAUDIA ROSSELL</h1>
+        <p class="home__text">
+          FINE ARTIST
+        </p>
+        <div class="home__button-container">
+          <button class="home__button">VIEW WORK</button>
+        </div>
+      </div>
+      <div class="home__video-container">
+        <video autoplay muted src="video/Pintura.mp4" class="home__video">
+        </video>
+      </div>
+    </div>
+  </section>
+  <main id="bio" class="bio">
+    <div class="bio__wrapper">
+      <div class="bio__img-container">
+        <img src="img/ClaudiaRossell.jpg" alt="Una foto de la  pintora Claudia Rossell" class="bio__img">
+      </div>
+      <div class="bio__data-container">
+        <div class="bio__data">
+          <h1 class="bio__title">
+            Claudia Rossell
+          </h1>
+          <p class="bio__text">
+            Pintora y dibujante clásica figurativa. Nacida en Oruro - Bolivia. Recibío formación universitaria hasta el 2021 en Argentina y actualmente continua su formación autodidacta e independiente con algunos talleres a distancia
+          </p>
+        </div>
+        <div class="bio__skills-container">
+          <div class="bio__skills">
+            <h2 class="bio__title-two">SKILLS</h2>
+            <ul class="bio__list">
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Pintura Figurativa</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Técn. Tradicionales y Contemporáneas</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Pintura del natural</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Retrato y Figura Humana</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Naturaleza muerta</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Pintura Académica</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Composición Artistica</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                   <span class="bio__name">Uso de color y atmósferas</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                   <span class="bio__name">Dibujo grafito</span>
+                  </div>
+                </div>
+              </li>
+              <li class="bio__item">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--100">
+                    <span class="bio__name">Dibujo tiza pastel</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="contact">
+    <form class="form">
+      <h3 class="form__title-3">CONTACTO</h3>
+      <div class="form__container">
+        <label for="name" class="form__label">Nombre</label>
+        <input id="name" type="text" placeholder="John" class="form__name">
+      </div>
+      <div class="form__container">
+        <label for="lastname" class="form__label">Apellido</label>
+        <input id="lastname" type="text" placeholder="Doe" class="form__name">
+      </div>
+      <div class="form__container">
+        <label for="email" class="form__label">Correo</label>
+        <input id="email" type="text" placeholder="example@gmail.com" class="form__name">
+      </div>
+      <div class="form__container">
+        <label for="message" class="form__label">Comentarios</label>
+        <textarea rows="7" id="message" placeholder="Message" class="form__message"></textarea>
+      </div>
+      <div class="form__container">
+        <input type="submit" class="form__btn">
+      </div>
+    </form>
+  </section>
+</body>
+</html>

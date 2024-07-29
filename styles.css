@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #cadea5;
+  font-family: "Montserrat";
+  height: 200vh;
+}
+
+body, header, input, label, div, nav, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------- HEADER SECTION -------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #fff;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  container-name: header;
+  container-type: inline-size;
+}
+
+.header__img-logo {
+  max-width: 100%;
+  width: 200px;
+}
+
+.header__btn {
+  font-size: 3rem;
+  padding: 8px 11px;
+  color: #73805d;
+  position: absolute;
+  right: 0;
+}
+
+.header__btn:hover {
+  background-color: #cadea5;
+  border-radius: 3px;
+}
+
+.header__checkbox {
+  display: none;
+}
+
+.header__nav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+}
+
+.header__list {
+  margin: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.header__item {
+  padding: 10px 8px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #73805d;
+}
+
+.header__item:is(:hover, :active) {
+  background-color: #cadea5;
+  border-radius: 3px;
+  /* text-decoration: underline; */
+}
+
+.header__checkbox:checked ~ .header__nav {
+  display: flex;
+}
+
+/* -------- HEADER ENDS -------- */
+
+/* -------- HOME SECTION -------- */
+
+.home__cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #090a093b;
+}
+
+.wrapper {
+  position: relative;
+  /* display: flex; */
+}
+
+.home__wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin: auto; */
+}
+
+.home__video-container {
+  max-width: 1200px;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.home__title {
+  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 14px;
+}
+
+.home__text {
+  position: absolute;
+  top: 10%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 17px;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 0.8rem;
+  /* border: 2px solid red; */
+
+}
+
+.home__button-container {
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.home__button {
+  padding: 2% 6%;
+  background-color: transparent;
+  border: 1px solid #e2dcd7;
+  color: #fff;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  position: relative;
+}
+
+.home__button:hover {
+  color: #000;
+  background-color: #fff;
+  animation: opacity 1s both;  
+}
+
+
+
+/* ESTO ES UNA TRANSICIÓN QUE NO PUDO CAMBIAR LA LETRA DEL BOTON A NEGRO ------------ */
+
+/* .home__button::before {
+  content: '';
+  width: 120%;
+  height: 150%;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: -130%;
+  transition: left 1s, color .6s;
+  z-index: 29;
+} */
+
+/* .home__button:hover::before {
+  left: -10%;
+} */
+
+video {
+  max-width: 100%;
+}
+
+/* -------- HOME ENDS -------- */
+
+/* -------- BIO SECTION -------- */
+
+.bio__wrapper {
+  background-color: #fff;
+  max-width: 700px;
+}
+
+.bio__img-container {
+  /* border: 2px solid red; */
+  height: 350px;
+  overflow: hidden;
+}
+
+.bio__img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 0 -200px;
+  width: 700px;
+}
+
+.bio__data-container {
+  padding: 20px;
+}
+
+.bio__title {
+  color: #363b2c;
+  margin: 0;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-wrap: balance;
+}
+
+.bio__text {
+  color: #363b2c;
+  text-wrap: pretty;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.bio__skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio__title-two {
+  color: #363b2c;
+  text-align: center;
+  font-weight: 500;
+}
+
+.bio__item {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.load-bar {
+  border: 1px solid #8fc42d;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.load-bar__bar {
+  background-color: #cadea5;
+  padding: 10px 8px;
+  display: flex;
+  /* justify-content: center; */
+  border-radius: 4px;
+  /* animation: fill 2.4s -1s both; */
+  position: relative;
+  overflow: hidden;
+}
+
+.load-bar__bar::after {
+  content: '';
+  width: 150%;
+  height: 140%;
+  background-color: #e5f5c8dc;
+  position: absolute;
+  top: -6px;
+  left: -154%;
+  transition: left .3s linear, color .3s;
+}
+
+.load-bar__bar:hover::after {
+  left: -10%;
+  color: #fff;
+}
+
+.bio__name {
+  color: #363b2c;
+  font-size: 1rem;
+  position: relative;
+  z-index: 60;
+}
+
+
+/* -------- BIO ENDS -------- */
+
+/* -------- CONTACT SECTION -------- */
+
+.contact {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.form {
+  width: 300px;
+  margin: auto;
+  border-radius: 7px;
+  margin: 20px;
+  background-color: #cccccc62;
+  box-shadow: 0 0 20px 1px #00000021;
+}
+
+.form__container {
+  margin: 4px 20px;
+}
+
+input {
+  padding: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 3px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form__label {
+  font-size: 0.83rem;
+}
+
+.form__title-3 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.form__btn {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* -------- CONTACT ENDS -------- */
+
+/* -------- QUERIES SECTION -------- */
+
+@container header (min-width: 760px) {
+  .header__nav {
+    display: flex;
+    height: auto;
+    width: auto;
+    position: static;
+    padding: 5px 0px;
+  }
+
+  .header__list {
+    flex-direction: row;
+    height: auto;
+    gap: 20px;
+  }
+  
+  .header__item {
+    text-align: center;
+    animation: opacity-nav 2s both;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  @keyframes opacity-nav {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+}
+
+/* -------- QUERIES ENDS -------- */
+
+/* -------- ANIMATION SECTION -------- */
+
+@keyframes opacity {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  from {
+    width: 50%;
+  }
+  
+  to {
+    width: 100%;
+  }
+}
+
