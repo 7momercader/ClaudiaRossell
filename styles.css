@@ -223,7 +223,7 @@ video {
 .bio__img {
   max-width: 100%;
   object-fit: cover;
-  object-position: 0 -200px;
+  object-position: 0 -60px;
   width: 700px;
 }
 
