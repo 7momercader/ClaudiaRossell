@@ -358,8 +358,9 @@ textarea {
 }
 
 .form__btn {
-  background-color: #ffffff;
+  background-color: #635c3e;
   padding: 10px;
+  color: #fff;
 }
 
 /* -------- CONTACT ENDS -------- */
